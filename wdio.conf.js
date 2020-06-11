@@ -89,7 +89,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://www.way2automation.com/Demo.html',
+    baseUrl: 'http://www.finance.yahoo.com',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -131,7 +131,8 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 60000,
+        retries: 3
     },
     //
     // =====
