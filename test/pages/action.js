@@ -8,7 +8,16 @@ elementDisplayed(element){
 
 }
 
+doClick(element){
+    element.waitforDisplayed()
+    element.click()
 
+}
 
+doSetValue(element,value){
+    element.waitforDisplayed()
+    element.setValue(value)
+    
+}
 }
 module.exports = new action()
